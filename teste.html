@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Teste 01</title>
+</head>
+<body>
+
+<input type="text" id="num1">
++
+<input type="text" id="num2">
+<button id="botao">Ver Resultado</button>
+<p id='resultado'>0</p>
+
+<script>
+var num1 = document.getElementById('num1')
+var num2 = document.getElementById('num2')
+var botao = document.getElementById('botao')
+var resultado = document.getElementById('resultado')
+
+botao.addEventListener('click', function(){
+	resultado.innerHTML = parseFloat(num1.value) + parseFloat(num2.value)
+});
+
+
+
+// mudaNome();
+
+</script>
+</body>
+</html>
